@@ -1,0 +1,20 @@
+# OS
+.DS_Store
+
+# Rust
+/target/
+
+# Node
+node_modules/
+dist/
+.output/
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+
+# Local vaults and backups
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
