@@ -77,7 +77,7 @@ self-hostable, and drops note taking entirely.
 
 ## Business model
 
-- Apps and self-hosted server: free.
+- Apps and self-hosted server: free and open source (AGPL-3.0).
 - Satchel Cloud subscription: end-to-end encrypted sync and storage, an
   MCP relay so Claude/ChatGPT connectors reach the desktop app without a
   tunnel, AI-assisted capture without API keys, and proxied enrichment
