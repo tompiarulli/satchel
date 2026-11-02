@@ -35,3 +35,9 @@ Status: planning. No code yet.
   what leaves the device
 - [Modules](docs/modules.md) — the content-type plugin system and v1 modules
 - [Roadmap](docs/roadmap.md) — phases and open questions
+
+## License
+
+[AGPL-3.0](LICENSE). Self-hosting for yourself carries no obligations;
+running a modified version as a service for others requires publishing
+your changes.

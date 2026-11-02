@@ -59,16 +59,27 @@ Each phase ends with something usable day to day.
   providers, with zero-data-retention providers.
 - MCP relay to desktop apps (SNI routing, TLS ends on the desktop).
 
+## Decisions
+
+- **License: AGPL-3.0 for the whole repository.** Privacy claims need
+  auditable code, and AGPL requires anyone hosting a modified Satchel to
+  publish their changes, which protects Satchel Cloud. Same model as
+  Ente, Standard Notes and Signal. A standalone library (e.g. the
+  extractor or block document format) may later be split out under
+  MIT/Apache-2.0 for reuse.
+  - Before accepting outside contributions: adopt a contributor license
+    agreement, so the apps can ship on the App Store and be relicensed
+    if needed.
+  - Before Cloud launches: publish a trademark policy so forks can't use
+    the Satchel name, and confirm the name is clear for software.
+    Have a lawyer review both.
+
 ## Open questions
 
 - **Extraction quality.** How close does the Rust fallback (dom_smoothie)
   get to Defuddle on the fixture set? If the gap is large, port Defuddle's
   site-specific rules into `satchel-extract`, or run Defuddle on mobile in
   a hidden WebView.
-- **Licensing.** Privacy claims need auditable code, so clients and
-  server should be open source. Which license: AGPL for everything, or
-  AGPL server with a permissive core? It affects whether others can
-  resell the server as a competing cloud.
 - **Remote MCP when the desktop is off.** The relay design needs the
   desktop app running. Is that acceptable, or should a phone be able to
   answer too (harder: iOS limits background work)?
